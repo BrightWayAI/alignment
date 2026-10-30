@@ -1,7 +1,7 @@
 {
   "name": "alignment",
-  "version": "1.6.1",
-  "description": "Team Alignment. Weekly cross-team alignment scanner. Monitors Slack channels for overlapping initiatives, conflicting priorities, and decisions that affect other teams — then delivers a Monday morning brief.",
+  "version": "1.6.2",
+  "description": "Team Alignment. Weekly cross-team alignment scanner. Monitors Slack channels for overlapping initiatives, conflicting priorities, and decisions that affect other teams \u2014 then delivers a Monday morning brief.",
   "author": {
     "name": "Zach Wagner"
   },
