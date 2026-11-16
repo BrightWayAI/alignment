@@ -4,6 +4,11 @@ All notable changes to alignment (formerly weekly-alignment) are documented here
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [1.6.3] — alignment-scanner tool limits (2026-11-16)
+
+### Changed
+- `alignment-scanner` withholds `Write`, `Edit`, `NotebookEdit`, `Agent`, and the Slack send and canvas tools. Slack read tools are still inherited.
+
 ## [1.6.2] — Cloud config-root portability (2026-10-30)
 
 ### Fixed
