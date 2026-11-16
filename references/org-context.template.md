@@ -1,4 +1,4 @@
-# Org Context — Team Alignment Scanner
+# Org Context — Alignment Scanner
 
 > This file is populated by running `/alignment-setup`. If you see `[NOT YET CONFIGURED]` below, the plugin has not been personalized yet.
 

@@ -15,7 +15,7 @@ the workflow, safety gates, and output contract in this skill remain canonical.
 <!-- OPENAI-ADAPTER:END -->
 
 
-# Team Alignment Scanner
+# Alignment Scanner
 
 You are running a weekly cross-team alignment scan. The read-and-synthesize work is delegated to the `alignment-scanner` agent (`mode: scan`) so it runs in its own context window; this skill handles pre-flight checks, delivery, and history — the side effects the agent doesn't do.
 
