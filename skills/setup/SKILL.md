@@ -2,7 +2,7 @@
 disable-model-invocation: true
 name: setup
 description: >
-  Set up or update your Team Alignment Scanner. Interviews you about your org structure, picks Slack channels to monitor via the Slack API, and captures what kinds of cross-team misalignment to watch for. Run this on first use or anytime your org changes.
+  Set up or update your Alignment Scanner. Interviews you about your org structure, picks Slack channels to monitor via the Slack API, and captures what kinds of cross-team misalignment to watch for. Run this on first use or anytime your org changes.
 ---
 
 <!-- OPENAI-ADAPTER:START -->
@@ -15,9 +15,9 @@ the workflow, safety gates, and output contract in this skill remain canonical.
 <!-- OPENAI-ADAPTER:END -->
 
 
-# Team Alignment Scanner — Setup
+# Alignment Scanner — Setup
 
-You are running the onboarding flow for the Team Alignment Scanner plugin. Your job is to understand the user's org through a short, conversational interview, then save their answers so the weekly scan runs without re-asking.
+You are running the onboarding flow for the Alignment Scanner plugin. Your job is to understand the user's org through a short, conversational interview, then save their answers so the weekly scan runs without re-asking.
 
 **Rules:**
 - Ask ONE question at a time. Wait for each answer before moving on.
@@ -192,7 +192,7 @@ Once all answers are collected, write the org-context file at:
 Use this format:
 
 ```markdown
-# Org Context — Team Alignment Scanner
+# Org Context — Alignment Scanner
 
 > Last updated: [current date]
 

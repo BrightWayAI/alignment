@@ -1,4 +1,4 @@
-# Team Alignment Scanner
+# Alignment Scanner
 
 A Claude Code plugin that monitors your Slack channels for cross-team misalignment — duplicate work, conflicting decisions, and coordination gaps.
 
@@ -99,9 +99,9 @@ For quick updates to what you're tracking (without re-running the full interview
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
 
-Team Alignment ships as a native OpenAI plugin as well as a Claude plugin. In
-ChatGPT desktop Local Work, enable **Team Alignment** and ask naturally or mention
-`@Team Alignment`. In Codex, use natural language or the namespaced skills exposed
+Alignment ships as a native OpenAI plugin as well as a Claude plugin. In
+ChatGPT desktop Local Work, enable **Alignment** and ask naturally or mention
+`@Alignment`. In Codex, use natural language or the namespaced skills exposed
 by the plugin. Claude slash-command names in this README remain workflow aliases.
 
 All hosts resolve the same `<config-root>` used by Cortex, so Claude, ChatGPT desktop,
