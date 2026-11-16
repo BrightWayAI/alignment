@@ -1,9 +1,12 @@
 ---
 name: alignment-scanner
 description: Read Slack channels and synthesize cross-team misalignment, mode-dispatched. `mode: scan` is the full weekly cross-reference scan. `mode: pulse` is a lightweight daily skim. `mode: report` is a deep-dive investigation of one named issue. The parent skill always passes an explicit mode plus org context; it handles pre-flight checks, delivery, and history-saving as side effects — this agent only reads and synthesizes. Extracted from the formerly-inline scan/daily-pulse/report skill logic (2026-09-15) so the read-and-synthesize work runs in its own context window and returns evidence with conclusions, instead of bloating the parent conversation.
+disallowedTools: Write, Edit, NotebookEdit, Agent, mcp__claude_ai_Slack__slack_send_message, mcp__claude_ai_Slack__slack_schedule_message, mcp__claude_ai_Slack__slack_create_canvas, mcp__claude_ai_Slack__slack_update_canvas
 model: sonnet
 reasoning_tier: standard
 ---
+
+> **Tool limits (enforced):** the `disallowedTools:` line above withholds the file-editing tools (`Write`, `Edit`, `NotebookEdit`), delegation to other agents (`Agent`), and the named connector send/write tools. Everything else is inherited from the parent session, including read access to whichever connectors the user has connected. Two limits are not enforced by this line and rest on the rules below: the shell stays available because file search depends on it, and connector tool names differ by host, so a send or write tool the list does not name is still reachable. Never use either to write, send, or change anything.
 
 # alignment-scanner
 
