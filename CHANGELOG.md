@@ -4,6 +4,11 @@ All notable changes to alignment (formerly weekly-alignment) are documented here
 
 Format follows [Keep a Changelog](https://keepachangelog.com/). Versions match `plugin.json`.
 
+## [1.6.5] — README refresh (2026-11-17)
+
+### Changed
+- README: setup and config-update instructions now name the skills that exist (`setup`, `update-risks`). Documentation only; no behavior change.
+
 ## [1.6.4] — Plain plugin names (2026-11-16)
 
 ### Changed

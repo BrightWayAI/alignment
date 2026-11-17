@@ -1,6 +1,6 @@
 {
   "name": "alignment",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "Alignment. Cross-team alignment from Slack. Scans the channels you configure for overlapping initiatives, conflicting priorities, and decisions that affect other teams, and produces a daily pulse, a weekly report, and deep-dive reports on a named issue. Read-only against Slack: it never posts.",
   "author": {
     "name": "Zach Wagner"
