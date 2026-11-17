@@ -16,6 +16,7 @@ This plugin hands that job to Claude.
 | **daily-pulse** | `daily pulse` / `what did I miss` | Quick 24-hour skim. Surfaces anything urgent or noteworthy without full cross-team analysis. |
 | **report** | `dig into [issue]` | Deep dive into a specific conflict. Goes back 14 days, traces the timeline, recommends a concrete next step. |
 | **update-risks** | `update risks` / `update config` | Quickly update any part of your scanner config — risks, channels, teams, patterns, delivery preferences — without re-running the full setup. |
+| **setup** | `set up alignment` | The first-run interview: channels, teams, and the kinds of misalignment that happen in your org. |
 
 `scan`, `daily-pulse`, and `report` each delegate their Slack-reading and synthesis to the `alignment-scanner` subagent (mode-dispatched: `scan` / `pulse` / `report`) — the skill itself just handles pre-flight checks, delivery, and history.
 
@@ -54,7 +55,7 @@ Just say `run my weekly alignment check`. If you haven't set up yet, the scanner
 
 Or run setup explicitly:
 ```
-/alignment-setup
+/alignment:setup
 ```
 
 Setup takes ~5 minutes. Claude pulls your Slack channels live from the API (so you pick from a list instead of typing names), asks about your teams, and captures what kinds of misalignment happen in your org. Your answers get saved so the interview doesn't repeat.
@@ -92,9 +93,9 @@ decide who owns caching.
 
 ## Customization
 
-Run `/alignment-setup` again anytime your org changes — new teams, new channels, new risks.
+Run `/alignment:setup` again anytime your org changes — new teams, new channels, new risks.
 
-For quick updates to what you're tracking (without re-running the full interview), use `/alignment-update-config`.
+For quick updates to what you're tracking (without re-running the full interview), say `update risks` (or run `/alignment:update-risks`).
 
 <!-- OPENAI-SUPPORT:START -->
 ## ChatGPT and Codex
